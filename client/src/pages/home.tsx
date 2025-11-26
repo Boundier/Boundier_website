@@ -61,7 +61,7 @@ export default function Home() {
       </header>
 
       {/* Hero Section */}
-      <section className="relative z-10 flex flex-col items-center justify-center px-6 pt-20 pb-24 text-center max-w-5xl mx-auto">
+      <section className="relative z-10 flex flex-col items-center justify-center px-6 pt-32 md:pt-20 pb-24 text-center max-w-5xl mx-auto">
         <motion.div 
           initial="hidden"
           animate="visible"
@@ -73,12 +73,12 @@ export default function Home() {
             <span className="text-[#0038FF]">We Read It.</span>
           </motion.h1>
           
-          <motion.p variants={fadeIn} className="text-xl md:text-2xl text-white max-w-4xl font-light leading-relaxed mt-8">
-            Boundier shows how the content you see affects what you pay attention to,<br className="hidden md:block" />
+          <motion.p variants={fadeIn} className="text-xl md:text-2xl text-white max-w-4xl font-light leading-relaxed mt-10 md:mt-8">
+            Boundier shows how the content you see affects what you pay attention to,<br className="block" />
             what you believe, and what your feed becomes over time.
           </motion.p>
 
-          <motion.div variants={fadeIn} className="flex flex-wrap justify-center gap-6 md:gap-12 mt-6 mb-2 text-base md:text-lg font-medium text-white/60">
+          <motion.div variants={fadeIn} className="flex flex-col md:flex-row items-center gap-4 md:gap-12 mt-10 mb-2 text-base md:text-lg font-medium text-white/60">
             <span className="flex items-center gap-3">
               <div className="w-3 h-3 rounded-full border-2 border-[#0038FF]"></div> Tracks attention
             </span>
@@ -90,7 +90,7 @@ export default function Home() {
             </span>
           </motion.div>
 
-          <motion.div variants={fadeIn} className="mt-10">
+          <motion.div variants={fadeIn} className="mt-16">
             <a 
                href="https://forms.fillout.com/t/g6uj4TPDgrus" 
                target="_blank" 
