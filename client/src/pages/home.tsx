@@ -69,7 +69,8 @@ export default function Home() {
           className="flex flex-col items-center gap-8"
         >
           <motion.h1 variants={fadeIn} className="text-6xl md:text-8xl font-bold tracking-tight leading-tight">
-            You See It. <br className="hidden md:block" />
+            You See It. <br className="md:hidden" />
+            <br className="hidden md:block" />
             <span className="text-[#0038FF]">We Read It.</span>
           </motion.h1>
           
