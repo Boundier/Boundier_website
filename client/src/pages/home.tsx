@@ -238,20 +238,17 @@ export default function Home() {
 
       {/* Footer */}
       <footer className="relative z-10 py-24 px-6 border-t border-white/5 mt-12">
-        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 items-center gap-8 md:gap-0">
+        <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8 md:gap-0">
           
-          {/* Left Spacer - Keeps layout balanced */}
-          <div className="hidden md:block"></div>
-
-          {/* Center - Logo */}
-          <div className="flex justify-center">
+          {/* Left */}
+          <div className="flex flex-col items-center md:items-start gap-4 flex-1">
             <a href="https://boundier.xyz/" target="_blank" rel="noopener noreferrer">
               <img src={logoUrl} alt="Boundier" className="h-20 object-contain" />
             </a>
           </div>
 
           {/* Right - Socials & Contact */}
-          <div className="flex items-center justify-center md:justify-end gap-6">
+          <div className="flex items-center gap-6 flex-1 justify-center md:justify-end">
             <a 
               href="https://youtube.com/@boundier" 
               target="_blank" 
