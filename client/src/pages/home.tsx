@@ -1,6 +1,6 @@
 import React, { useRef, useEffect, useState } from "react";
 import { motion, Variants } from "framer-motion";
-import { ArrowRight, RotateCcw } from "lucide-react";
+import { RotateCcw, Mail } from "lucide-react";
 import logoUrl from "@assets/LogoForHeader-removebg-preview_1764017143644.png";
 import videoUrl from "@assets/Record_2025-11-25-12-53-56_7e5fa194045be871f4290448dc08e694~2_1764056753662.mp4";
 import youtubeLogo from "@assets/yt_icon_white_digital_1764017737980.png";
@@ -73,8 +73,9 @@ export default function Home() {
             <span className="text-[#0038FF]">We Read It.</span>
           </motion.h1>
           
-          <motion.p variants={fadeIn} className="text-xl md:text-2xl text-white max-w-3xl font-light leading-relaxed">
-            Boundier shows how the content you see affects what you pay attention to, what you believe, and what your feed becomes over time.
+          <motion.p variants={fadeIn} className="text-xl md:text-2xl text-white max-w-4xl font-light leading-relaxed mt-8">
+            Boundier shows how the content you see affects what you pay attention to,<br className="hidden md:block" />
+            what you believe, and what your feed becomes over time.
           </motion.p>
 
           <motion.div variants={fadeIn} className="flex flex-wrap justify-center gap-6 md:gap-12 mt-6 mb-2 text-base md:text-lg font-medium text-white/60">
@@ -172,7 +173,7 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {/* Card 1 */}
             <motion.div variants={fadeIn} className="glass-light p-8 rounded-2xl flex flex-col gap-4 hover:bg-white/10 transition-colors duration-300 group">
-              <div className="h-12 w-12 rounded-full bg-[#0038FF]/20 flex items-center justify-center text-blue-200 mb-2 group-hover:scale-110 transition-transform shadow-[0_0_15px_rgba(0,56,255,0.1)]">
+              <div className="h-12 w-12 rounded-full glass-light border border-white/10 flex items-center justify-center text-blue-200 mb-2 group-hover:scale-110 transition-transform shadow-[0_0_15px_rgba(0,56,255,0.1)]">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
               </div>
               <h3 className="text-xl font-bold">Influence</h3>
@@ -183,7 +184,7 @@ export default function Home() {
 
             {/* Card 2 */}
             <motion.div variants={fadeIn} className="glass-light p-8 rounded-2xl flex flex-col gap-4 hover:bg-white/10 transition-colors duration-300 group">
-              <div className="h-12 w-12 rounded-full bg-[#0038FF]/20 flex items-center justify-center text-blue-200 mb-2 group-hover:scale-110 transition-transform shadow-[0_0_15px_rgba(0,56,255,0.1)]">
+              <div className="h-12 w-12 rounded-full glass-light border border-white/10 flex items-center justify-center text-blue-200 mb-2 group-hover:scale-110 transition-transform shadow-[0_0_15px_rgba(0,56,255,0.1)]">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M2 12h20"/><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg>
               </div>
               <h3 className="text-xl font-bold">Distortion</h3>
@@ -194,7 +195,7 @@ export default function Home() {
 
             {/* Card 3 */}
             <motion.div variants={fadeIn} className="glass-light p-8 rounded-2xl flex flex-col gap-4 hover:bg-white/10 transition-colors duration-300 group">
-              <div className="h-12 w-12 rounded-full bg-[#0038FF]/20 flex items-center justify-center text-blue-200 mb-2 group-hover:scale-110 transition-transform shadow-[0_0_15px_rgba(0,56,255,0.1)]">
+              <div className="h-12 w-12 rounded-full glass-light border border-white/10 flex items-center justify-center text-blue-200 mb-2 group-hover:scale-110 transition-transform shadow-[0_0_15px_rgba(0,56,255,0.1)]">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 12a9 9 0 1 1-9-9c2.52 0 4.93 1 6.74 2.74L21 8"/><path d="M21 3v5h-5"/></svg>
               </div>
               <h3 className="text-xl font-bold">Echo Drift</h3>
@@ -246,8 +247,8 @@ export default function Home() {
             </a>
           </div>
 
-          {/* Center */}
-          <div className="flex items-center gap-6 flex-1 justify-center">
+          {/* Right - Socials & Contact */}
+          <div className="flex items-center gap-6 flex-1 justify-center md:justify-end">
             <a 
               href="https://youtube.com/@boundier" 
               target="_blank" 
@@ -264,16 +265,12 @@ export default function Home() {
             >
               <img src={githubLogo} alt="GitHub" className="h-6 w-auto opacity-80 group-hover:opacity-100" />
             </a>
-          </div>
-
-          {/* Right */}
-          <div className="flex-1 flex justify-center md:justify-end">
             <a 
               href="mailto:boundierofficial@gmail.com"
-              className="glass-light px-10 py-4 rounded-full text-lg font-medium text-[#0038FF] hover:bg-white/10 transition-all duration-300 flex items-center gap-2 group shadow-[0_0_15px_rgba(0,0,0,0.2)]"
+              className="h-14 w-14 flex items-center justify-center rounded-full glass-light border border-white/10 hover:bg-white/10 hover:scale-110 transition-all duration-300 group"
+              aria-label="Email Us"
             >
-              Email Us
-              <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
+              <Mail className="h-6 w-6 text-white/80 group-hover:text-white transition-colors" />
             </a>
           </div>
         </div>
