@@ -78,19 +78,19 @@ export default function Home() {
             what you believe, and what your feed becomes over time.
           </motion.p>
 
-          <motion.div variants={fadeIn} className="flex flex-col md:flex-row items-center gap-2 md:gap-12 mt-12 mb-2 text-base md:text-lg font-normal text-white/70">
+          <motion.div variants={fadeIn} className="inline-flex flex-col md:flex-row items-start md:items-center gap-3 md:gap-12 mt-12 mb-2 text-base md:text-lg font-normal text-white/70">
             <span className="flex items-center gap-3">
-              <div className="w-3 h-3 rounded-full border-2 border-[#0038FF]"></div> Tracks attention
+              <div className="w-3 h-3 rounded-full border-2 border-[#0038FF] shrink-0"></div> Tracks attention trends
             </span>
             <span className="flex items-center gap-3">
-              <div className="w-3 h-3 rounded-full border-2 border-[#0038FF]"></div> Detects manipulation
+              <div className="w-3 h-3 rounded-full border-2 border-[#0038FF] shrink-0"></div> Detects manipulation
             </span>
             <span className="flex items-center gap-3">
-              <div className="w-3 h-3 rounded-full border-2 border-[#0038FF]"></div> Warns echo chambers
+              <div className="w-3 h-3 rounded-full border-2 border-[#0038FF] shrink-0"></div> Warns echo chambers
             </span>
           </motion.div>
 
-          <motion.div variants={fadeIn} className="mt-16">
+          <motion.div variants={fadeIn} className="mt-12">
             <a 
                href="https://forms.fillout.com/t/g6uj4TPDgrus" 
                target="_blank" 
