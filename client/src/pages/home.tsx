@@ -78,15 +78,15 @@ export default function Home() {
             what you believe, and what your feed becomes over time.
           </motion.p>
 
-          <motion.div variants={fadeIn} className="flex flex-col md:flex-row items-center gap-2 md:gap-12 mt-12 mb-2 text-base md:text-lg font-medium text-white/60">
+          <motion.div variants={fadeIn} className="flex flex-col md:flex-row items-center gap-2 md:gap-12 mt-12 mb-2 text-lg md:text-xl font-semibold text-white/70">
             <span className="flex items-center gap-3">
-              <div className="w-3 h-3 rounded-full border-2 border-[#0038FF]"></div> Tracks attention
+              <div className="w-3 h-3 rounded-full border-[3px] border-[#0038FF]"></div> Tracks attention
             </span>
             <span className="flex items-center gap-3">
-              <div className="w-3 h-3 rounded-full border-2 border-[#0038FF]"></div> Detects manipulation
+              <div className="w-3 h-3 rounded-full border-[3px] border-[#0038FF]"></div> Detects manipulation
             </span>
             <span className="flex items-center gap-3">
-              <div className="w-3 h-3 rounded-full border-2 border-[#0038FF]"></div> Warns echo chambers
+              <div className="w-3 h-3 rounded-full border-[3px] border-[#0038FF]"></div> Warns echo chambers
             </span>
           </motion.div>
 
