@@ -73,23 +73,23 @@ export default function Home() {
             <span className="text-[#0038FF]">We Read It.</span>
           </motion.h1>
           
-          <motion.p variants={fadeIn} className="text-xl md:text-2xl text-white/80 max-w-3xl font-light leading-relaxed">
-            Boundier reveals how content influences you, distorts reality, and shapes your feed.
+          <motion.p variants={fadeIn} className="text-xl md:text-2xl text-white max-w-3xl font-light leading-relaxed">
+            Boundier shows how the content you see affects what you pay attention to, what you believe, and what your feed becomes over time.
           </motion.p>
 
-          <motion.div variants={fadeIn} className="flex flex-wrap justify-center gap-6 md:gap-12 mt-4 text-base md:text-lg font-medium text-white/60">
+          <motion.div variants={fadeIn} className="flex flex-wrap justify-center gap-6 md:gap-12 mt-6 mb-2 text-base md:text-lg font-medium text-white/60">
             <span className="flex items-center gap-3">
-              <span className="w-2 h-2 rounded-full bg-[#0038FF]"></span> Tracks attention
+              <div className="w-3 h-3 rounded-full border-2 border-[#0038FF]"></div> Tracks attention
             </span>
             <span className="flex items-center gap-3">
-              <span className="w-2 h-2 rounded-full bg-[#0038FF]"></span> Detects manipulation
+              <div className="w-3 h-3 rounded-full border-2 border-[#0038FF]"></div> Detects manipulation
             </span>
             <span className="flex items-center gap-3">
-              <span className="w-2 h-2 rounded-full bg-[#0038FF]"></span> Warns echo chambers
+              <div className="w-3 h-3 rounded-full border-2 border-[#0038FF]"></div> Warns echo chambers
             </span>
           </motion.div>
 
-          <motion.div variants={fadeIn} className="mt-8">
+          <motion.div variants={fadeIn} className="mt-10">
             <a 
                href="https://forms.fillout.com/t/g6uj4TPDgrus" 
                target="_blank" 
@@ -270,7 +270,7 @@ export default function Home() {
           <div className="flex-1 flex justify-center md:justify-end">
             <a 
               href="mailto:boundierofficial@gmail.com"
-              className="glass-light px-10 py-4 rounded-full text-lg font-medium text-[#0038FF] hover:bg-white/10 transition-all duration-300 flex items-center gap-2 group"
+              className="glass-light px-10 py-4 rounded-full text-lg font-medium text-[#0038FF] hover:bg-white/10 transition-all duration-300 flex items-center gap-2 group shadow-[0_0_15px_rgba(0,0,0,0.2)]"
             >
               Email Us
               <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
