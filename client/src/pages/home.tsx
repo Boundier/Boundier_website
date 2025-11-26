@@ -73,7 +73,7 @@ export default function Home() {
             <span className="text-[#0038FF]">We Read It.</span>
           </motion.h1>
           
-          <motion.p variants={fadeIn} className="text-xl md:text-2xl text-white max-w-4xl font-light leading-relaxed mt-6 md:mt-6">
+          <motion.p variants={fadeIn} className="text-xl md:text-2xl text-white max-w-4xl font-light leading-relaxed mt-10 md:mt-10">
             Boundier shows how the content you see affects what you pay attention to,<br className="block" />
             what you believe, and what your feed becomes over time.
           </motion.p>
