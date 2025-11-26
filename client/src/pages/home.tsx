@@ -50,20 +50,6 @@ export default function Home() {
     }
   };
 
-  const handleSeek = (e: React.MouseEvent<HTMLDivElement> | React.TouchEvent<HTMLDivElement>) => {
-    if (videoRef.current) {
-      const progressBar = e.currentTarget;
-      const rect = progressBar.getBoundingClientRect();
-      const clientX = 'touches' in e ? e.touches[0].clientX : e.clientX;
-      const clickX = clientX - rect.left;
-      const width = rect.width;
-      const percentage = Math.max(0, Math.min(1, clickX / width));
-      
-      videoRef.current.currentTime = percentage * videoRef.current.duration;
-      setProgress(percentage * 100);
-    }
-  };
-
   return (
     <div className="min-h-screen w-full bg-[#000543] text-white font-sans overflow-x-hidden selection:bg-[#0038FF] selection:text-white">
       
@@ -92,7 +78,7 @@ export default function Home() {
             what you believe, and what your feed becomes over time.
           </motion.p>
 
-          <motion.div variants={fadeIn} className="flex flex-col md:flex-row items-center gap-2 md:gap-12 mt-12 mb-2 text-base md:text-lg font-medium text-white/60">
+          <motion.div variants={fadeIn} className="flex flex-col md:flex-row items-center gap-2 md:gap-12 mt-12 mb-2 text-base md:text-lg font-normal text-white/70">
             <span className="flex items-center gap-3">
               <div className="w-3 h-3 rounded-full border-2 border-[#0038FF]"></div> Tracks attention
             </span>
@@ -104,7 +90,7 @@ export default function Home() {
             </span>
           </motion.div>
 
-          <motion.div variants={fadeIn} className="mt-24">
+          <motion.div variants={fadeIn} className="mt-16">
             <a 
                href="https://forms.fillout.com/t/g6uj4TPDgrus" 
                target="_blank" 
@@ -142,17 +128,11 @@ export default function Home() {
               <div className="absolute inset-0 pointer-events-none bg-gradient-to-tr from-white/5 to-transparent mix-blend-overlay"></div>
               
               {/* Progress Bar */}
-              <div 
-                className="absolute bottom-0 left-0 right-0 h-2 bg-white/10 cursor-pointer group"
-                onClick={handleSeek}
-                onTouchStart={handleSeek}
-              >
+              <div className="absolute bottom-0 left-0 right-0 h-1 bg-white/10">
                 <div 
-                  className="h-full bg-[#0038FF] transition-all duration-100 ease-linear relative"
+                  className="h-full bg-[#0038FF] transition-all duration-200 ease-linear"
                   style={{ width: `${progress}%` }}
-                >
-                  <div className="absolute right-0 top-1/2 -translate-y-1/2 w-3 h-3 bg-white rounded-full opacity-0 group-hover:opacity-100 transition-opacity shadow-md"></div>
-                </div>
+                />
               </div>
             </div>
           </div>
