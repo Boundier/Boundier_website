@@ -78,7 +78,7 @@ export default function Home() {
             what you believe, and what your feed becomes over time.
           </motion.p>
 
-          <motion.div variants={fadeIn} className="flex flex-col md:flex-row items-center gap-4 md:gap-12 mt-10 mb-2 text-base md:text-lg font-medium text-white/60">
+          <motion.div variants={fadeIn} className="flex flex-col md:flex-row items-center gap-2 md:gap-12 mt-12 mb-2 text-base md:text-lg font-medium text-white/60">
             <span className="flex items-center gap-3">
               <div className="w-3 h-3 rounded-full border-2 border-[#0038FF]"></div> Tracks attention
             </span>
@@ -140,10 +140,10 @@ export default function Home() {
           {/* Replay Button - Always visible, below frame */}
           <button 
             onClick={handleReplay}
-            className="p-4 rounded-full glass-dark border border-white/10 text-white/80 hover:text-white hover:bg-white/10 transition-all duration-300 backdrop-blur-md shadow-lg group"
+            className="h-12 w-12 flex items-center justify-center rounded-full glass-light border border-white/10 hover:bg-white/10 hover:scale-110 transition-all duration-300 group shadow-lg"
             aria-label="Replay Video"
           >
-            <RotateCcw size={24} className="group-hover:-rotate-180 transition-transform duration-500" />
+            <RotateCcw size={20} className="text-white/80 group-hover:text-white group-hover:-rotate-180 transition-all duration-500" />
           </button>
         </motion.div>
         
