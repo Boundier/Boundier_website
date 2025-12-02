@@ -1,0 +1,9 @@
+# Permission-Only License (India)
+
+Copyright (c) 2025 Boundier
+
+All rights reserved.  
+
+This software is proprietary. You may NOT use, copy, modify, distribute, or publish this code in any form without explicit written permission from the copyright holder.  
+
+Access is strictly controlled. Any use of this code without prior authorization is prohibited and may be subject to legal action under Indian copyright law.
